@@ -1,0 +1,610 @@
+@font-face {font-family: 'Ubuntu-Regular'; src: url('../fonts/Ubuntu-Regular.ttf')}
+@font-face {font-family: 'Ubuntu-Bold'; src: url('../fonts/Ubuntu-Bold.ttf')}
+@font-face {
+    font-family: 'IcoFont';
+    src: url('../fonts/icofont.ttf') format("truetype");
+    src: url('../fonts/icofont.woff') format("woff");
+    src: url('../fonts/icofont.woff2') format("woff2");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+ul{
+    list-style: none;
+}
+a, a:hover, a:active{
+    text-decoration: none;
+    color: #e1e1e1;
+}
+a:hover{
+    color: #fff;
+}
+body{
+    background: url('../img/bg.png') no-repeat;
+    font-family: 'Ubuntu-Regular';
+    overflow-x: hidden;
+}
+.clear{
+    clear:both;
+}
+
+#header{
+    line-height: 90px;
+}
+#header, #first_screen{
+    color: #fff;
+}
+#header .logo{
+    font-family: 'Ubuntu-Bold';
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.menu_item, .soc_icon{
+    display: inline-block;
+    font-size: 18px;
+}
+.menu_item{
+    margin-right: 70px;
+    color: #e1e1e1;
+}
+.menu_item:hover{
+    color: #fff;
+}
+.menu_item:last-child{
+    margin-right: 0px;
+}
+.soc_icon i{
+    font-size: 26px;
+    margin: 0 15px;
+    color: #e1e1e1;
+}
+.soc_icon i:hover{
+    color: #fff;
+}
+
+
+#first_screen{
+    height: 860px;
+    position: relative;
+}
+#first_screen .title{
+    margin-top: 180px;
+    margin-bottom: 25px;
+    font-family: 'Ubuntu-Bold';
+    font-size: 60px;
+}
+#first_screen .description{
+    font-size: 18px;
+    margin-bottom: 40px;
+    width: 470px;
+}
+.buttons button{
+    width: 158px;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    color: #fff;
+    background-color: #fc6a42;
+    margin-right: 15px;
+    font-family: 'Ubuntu-Bold';
+    font-size: 18px;
+    border-radius: 5px;
+}
+.buttons button:hover{
+    background-color: #dc5b37;
+}
+.buttons button.blue_button{
+    background-color: #4466c9;
+}
+.buttons button.blue_button:hover{
+    background-color: #3c5aaf;
+}
+.right_side{
+    position: relative;
+}
+.right_side{
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.circle{
+    font-family: 'Ubuntu-Bold';
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    font-size: 16px;
+    border-radius: 50%;
+    position: absolute;
+    text-transform: uppercase;
+    z-index: 10;
+}
+.scroll_down{
+    width: 49px;
+    height: 49px;
+    line-height: 49px;
+    position: absolute;
+    top: 750px;
+    left: 47%;
+    color: #ff5459;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.07) ,0px 0px 2px rgba(0,0,0,.05) , 0px 0px 2px rgba(0,0,0,.02);
+}
+.scroll_down:hover{
+    background-color: #4c6ac1;
+}
+.circle_london{
+    background-color: #4466c9;
+    top: 300px;
+    right: -130px;
+    font-size: 16px;
+}
+.circle_temp{
+    width: 57px;
+    height: 57px;
+    line-height: 57px;
+    background-color: #ffffff;
+    top: 100px;
+    right: -75px;
+    color: #6ca3ff;
+    font-size: 20px;
+}
+.circle_weather{
+    background-color: #fc6a42;
+    top: 300px;
+    left: -120px;
+    font-size: 18px;
+}
+.circle_rio{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    background-color: #fcec64;
+    top: 580px;
+    right: -80px;
+    font-size: 18px;
+    color: #648cff;
+}
+
+
+.title_big{
+    font-family: 'Ubuntu-Bold';
+    font-size: 36px;
+    color: #648cff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 150px;
+}
+.title_small{
+    font-family: 'Ubuntu-Regular';
+    font-size: 18px;
+    color: #999999;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 150px;
+}
+
+.features_item_img{
+    width: 95px;
+    height: 150px;
+    float: left;
+}
+.features_item_description{
+    padding-left: 15px;
+}
+.features_item_title{
+    font-family: 'Ubuntu-Bold';
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #353854;
+}
+.features_item_text{
+    font-family: 'Ubuntu-Regular';
+    font-size: 16px;
+    color: #aeaeae;
+}
+
+#widgets{
+    height: 1000px;
+    width: 100%;
+    position: relative;
+}
+#widgets img{
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+#widgets i{
+    font-size: 50px;
+    color: #c3cfe5;
+}
+#widgets i:hover{
+    color: #a9b3c4;
+}
+#widgets .arrow_left{
+    position: absolute;
+    top: 60%;
+    left: 5%;
+}
+#widgets .arrow_right{
+    position: absolute;
+    top: 60%;
+    right: 5%;
+}
+
+
+#screenshots .type_weather_image{
+    width: 500px;
+    height: 770px;
+    position: relative;
+}
+#screenshots .back_text{
+    font-size: 257px;
+    color: #ededf2;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 170px;
+    left: -27px;
+}
+#screenshots .circle_temp{
+    position: absolute;
+    top: 430px;
+    left: 5px;
+    background-color: #6ca3ff;
+    color: #fff;
+    width: 92px;
+    height: 92px;
+    line-height: 92px;
+    font-size: 30px;
+}
+.circle_cloudy{
+    text-transform: none;
+    width: 92px;
+    height: 92px;
+    line-height: 92px;
+    background-color: #fcec64;
+    top: 215px;
+    right: 100px;
+    color: #fff;
+    font-size: 18px;
+}
+#screenshots .type_weather_image img{
+    position: relative;
+    left: 70px;
+    top: 50px;
+}
+.type_weather_description{
+    width: 635px;
+    padding: 130px 100px 200px 50px;
+}
+.type_weather_description_title{
+    margin: 20px 0;
+    font-family: 'Ubuntu-Bold';
+    font-size: 36px;
+    color: #648cff;
+    text-transform: uppercase;
+}
+.type_weather_description_text{
+    font-family: 'Ubuntu-Regular';
+    font-size: 24px;
+    color: #353854;
+}
+.weather_circles{
+    margin-top: 40px;
+    position: relative;
+}
+.weather_circle{
+    font-family: 'Ubuntu-Bold';
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    color: #c3cfe5;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.07) ,0px 0px 2px rgba(0,0,0,.05) , 0px 0px 2px rgba(0,0,0,.02);
+}
+.weather_circle{
+    z-index: 3;
+}
+.weather_circle+.weather_circle{
+    z-index: 2;
+    top: 0;
+    left: 40px;
+}
+.weather_circle+.weather_circle+.weather_circle{
+    z-index: 1;
+    top: 0;
+    left: 85px;
+}
+#screenshots .sunny .circle_temp{
+    background-color: #fc6a42;
+}
+.sunny .circle_cloudy{
+    background-color: #f2a14e;
+}
+#screenshots .sunny .back_text{
+    left: 15px;
+}
+#screenshots .rainy .back_text{
+    left: 75px;
+}
+#screenshots .rainy .circle_temp{
+    background-color: #7693c8;
+}
+.rainy .circle_cloudy{
+    background-color: #b8faee;
+}
+
+#saying .quote{
+    position: relative;
+    height: 200px;
+    font-family: 'Ubuntu-Regular';
+    margin-bottom: 50px;
+}
+#saying .title_small{
+    margin-bottom: 100px;
+}
+.quote .quote_text{
+    font-size: 23px;
+    padding-top: 60px;
+}
+.quote .quote_author{
+    font-size: 18px;
+    margin-top: 15px;
+}
+.quote .quote_arrow{
+    position: absolute;
+    color: #648cff;
+    font-size: 35px;
+}
+.quote .quote_arrow_left{
+    top: 5px;
+    left: 0px;
+}
+.quote .quote_arrow_right{
+    bottom: 5px;
+    right: 10px;
+}
+
+
+#downloads{
+    background-color: #648cff;
+    height: 465px;
+}
+#downloads .container{
+    position: relative;
+}
+#downloads .title_big{
+    text-align: left;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 110px;
+    /* To be over bg images????? */
+    position: relative;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#downloads .title_small{
+    text-align: left;
+    color: #fff;
+    width: 360px;
+    margin-bottom: 30px;
+    /* To be over bg images????? */
+    position: relative;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+#downloads .icons{
+    position: relative;
+    z-index: 5;
+}
+.bg_images img{
+    position: absolute;
+    top: 65px;
+    right: 100px;
+    z-index: 2;
+}
+.bg_images img+img{
+    position: absolute;
+    top: 100px;
+    right: -130px;
+    z-index: 1;
+}
+.bg_images img+img+img{
+    position: absolute;
+    top: 100px;
+    right: 270px;
+    z-index: 1;
+}
+
+
+#footer{
+    position: relative;
+    background-color: #353854;
+    height: 370px;
+    z-index: 10;
+}
+#footer .container{
+    padding-top: 50px;
+}
+#footer .row:first-child{
+    margin-bottom: 50px;
+}
+#footer span.orange{
+    color: #fc6a42;
+}
+#footer span.blue{
+    color: #648cff;
+}
+#footer .text-right{
+    color: rgba(255, 255, 255, 0.2);
+}
+#footer .text-right a{
+    color: rgba(255, 255, 255, 0.2);
+}
+#footer .text-right:hover a{
+    color: rgba(255, 255, 255, 0.4);
+}
+#footer hr{
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+#arrow{
+    position: relative;
+    z-index: 10;
+}
+#arrow .top_arrow{
+    height: 40px;
+    width: 50px;
+    line-height: 40px;
+    font-size: 30px;
+    text-align: center;
+    color: #b5b5c8;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    bottom: 0px;
+    right: 300px;
+}
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+    #header{
+    padding-top: 20px;
+    line-height: 40px;
+    }
+    .menu_item{
+        margin-right: 20px;
+    }
+    .soc_icon i{
+        margin: 0 10px;
+    }
+    #first_screen .title {
+        margin-top: 10px;
+    }
+    #first_screen .buttons{
+        margin-bottom: 10px;
+    }
+    #first_screen .right_side img{
+        width: 170px;
+    }
+    .right_side{
+        top: 35%;
+        left: 35%;
+    }
+    .scroll_down{
+        top: 760px;
+        left: 47%;
+    }
+    .circle_london{
+        top: 170px;
+        right: -130px;
+    }
+    .circle_temp{
+        top: 70px;
+        right: -75px;
+    }
+    .circle_weather{
+        top: 160px;
+        left: -120px;
+    }
+    .circle_rio{
+        top: 330px;
+        right: -80px;
+    }
+    #widgets img{
+        position: absolute;
+        top: 43%;
+        left: 2%;
+        width: 540px;
+    }
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    #header{
+        padding-top: 20px;
+        line-height: 40px;
+    }
+    #first_screen .title {
+        margin-top: 10px;
+    }
+    #first_screen .buttons{
+        margin-bottom: 10px;
+    }
+    #first_screen .right_side img{
+        width: 200px;
+    }
+    .right_side{
+        top: 35%;
+        left: 35%;
+    }
+    .scroll_down{
+        top: 820px;
+        left: 47%;
+    }
+    .circle_london{
+        top: 200px;
+        right: -130px;
+    }
+    .circle_temp{
+        top: 100px;
+        right: -75px;
+    }
+    .circle_weather{
+        top: 200px;
+        left: -120px;
+    }
+    .circle_rio{
+        top: 380px;
+        right: -80px;
+    }
+    .menu_item{
+        margin-right: 50px;
+    }
+    .soc_icon i{
+        margin: 0 10px;
+    }
+    #widgets img{
+        position: absolute;
+        top: 35.5%;
+        left: 2%;
+        width: 700px;
+    }
+}
+
+ /* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .menu_item{
+        margin-right: 20px;
+    }
+    .soc_icon i{
+        margin: 0 10px;
+    }
+    .circle_weather{
+        top: 250px;
+        left: -100px;
+    }
+    #widgets img{
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+    .type_weather_description{
+        padding: 130px 170px 200px 20px;
+    }
+}
+
+ /* Extra large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
